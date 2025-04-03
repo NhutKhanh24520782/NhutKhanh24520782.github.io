@@ -4,25 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mạng Máy Tính - Kiến Thức Cơ Bản</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        /* Header */
+        header {
+            background: #1a73e8;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav {
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #e3f2fd;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #1a73e8;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 2rem 0;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section p, .section ul {
+            margin: 0 auto;
+            max-width: 700px;
+            font-size: 1.1rem;
+        }
+
+        .section ul {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .card h4 {
+            font-size: 1.3rem;
+            color: #1a73e8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="logo">
-                <i class="fas fa-network-wired"></i>
-                <h1>Mạng Máy Tính</h1>
-            </div>
+            <h1>Mạng Máy Tính</h1>
             <nav>
-                <ul>
-                    <li><a href="#home">Trang Chủ</a></li>
-                    <li><a href="#protocols">Giao Thức</a></li>
-                    <li><a href="#devices">Thiết Bị</a></li>
-                    <li><a href="#security">Bảo Mật</a></li>
-                    <li><a href="#contact">Liên Hệ</a></li>
-                </ul>
+                <a href="#home">Trang Chủ</a>
+                <a href="#protocols">Giao Thức</a>
+                <a href="#devices">Thiết Bị</a>
+                <a href="#security">Bảo Mật</a>
+                <a href="#contact">Liên Hệ</a>
             </nav>
         </div>
     </header>
@@ -30,27 +142,26 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Khám Phá Thế Giới Mạng Máy Tính</h1>
+            <h2>Khám Phá Mạng Máy Tính</h2>
             <p>Hiểu biết về mạng máy tính, giao thức, thiết bị và cách bảo mật mạng hiệu quả.</p>
-            <a href="#protocols" class="btn">Tìm Hiểu Ngay</a>
         </div>
     </section>
 
     <!-- Protocols Section -->
     <section id="protocols" class="section">
         <div class="container">
-            <h2>Các Giao Thức Mạng</h2>
+            <h3>Các Giao Thức Mạng</h3>
             <div class="content">
                 <div class="card">
-                    <h3>TCP/IP</h3>
+                    <h4>TCP/IP</h4>
                     <p>TCP/IP là bộ giao thức nền tảng cho Internet, đảm bảo truyền dữ liệu đáng tin cậy.</p>
                 </div>
                 <div class="card">
-                    <h3>HTTP/HTTPS</h3>
+                    <h4>HTTP/HTTPS</h4>
                     <p>HTTP và HTTPS được dùng để truyền tải các trang web, với HTTPS có thêm bảo mật SSL/TLS.</p>
                 </div>
                 <div class="card">
-                    <h3>DNS</h3>
+                    <h4>DNS</h4>
                     <p>DNS chuyển đổi tên miền (như google.com) thành địa chỉ IP để kết nối.</p>
                 </div>
             </div>
@@ -60,18 +171,18 @@
     <!-- Devices Section -->
     <section id="devices" class="section">
         <div class="container">
-            <h2>Thiết Bị Mạng</h2>
+            <h3>Thiết Bị Mạng</h3>
             <div class="content">
                 <div class="card">
-                    <h3>Router</h3>
+                    <h4>Router</h4>
                     <p>Router kết nối các mạng khác nhau, định tuyến dữ liệu giữa các thiết bị.</p>
                 </div>
                 <div class="card">
-                    <h3>Switch</h3>
+                    <h4>Switch</h4>
                     <p>Switch kết nối các thiết bị trong cùng một mạng, chuyển dữ liệu đến đúng đích.</p>
                 </div>
                 <div class="card">
-                    <h3>Firewall</h3>
+                    <h4>Firewall</h4>
                     <p>Firewall bảo vệ mạng bằng cách kiểm soát lưu lượng truy cập dựa trên quy tắc.</p>
                 </div>
             </div>
@@ -81,34 +192,30 @@
     <!-- Security Section -->
     <section id="security" class="section">
         <div class="container">
-            <h2>Bảo Mật Mạng</h2>
-            <div class="content">
-                <p>Dưới đây là một số mẹo để bảo mật mạng của bạn:</p>
-                <ul>
-                    <li>Sử dụng mật khẩu mạnh và thay đổi định kỳ.</li>
-                    <li>Kích hoạt mã hóa WPA3 cho Wi-Fi.</li>
-                    <li>Cài đặt và cập nhật phần mềm diệt virus.</li>
-                    <li>Sử dụng VPN khi truy cập mạng công cộng.</li>
-                </ul>
-            </div>
+            <h3>Bảo Mật Mạng</h3>
+            <p>Một số mẹo để bảo mật mạng của bạn:</p>
+            <ul>
+                <li>Sử dụng mật khẩu mạnh và thay đổi định kỳ.</li>
+                <li>Kích hoạt mã hóa WPA3 cho Wi-Fi.</li>
+                <li>Cài đặt và cập nhật phần mềm diệt virus.</li>
+                <li>Sử dụng VPN khi truy cập mạng công cộng.</li>
+            </ul>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>Liên Hệ</h2>
-            <p>Có thắc mắc? Hãy liên hệ với chúng tôi!</p>
-            <form id="contact-form">
-                <input type="text" placeholder="Họ và tên" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Tin nhắn" required></textarea>
-                <button type="submit">Gửi</button>
-            </form>
+            <h3>Liên Hệ</h3>
+            <p>Có thắc mắc? Hãy gửi email cho chúng tôi tại: <a href="mailto:nhutkhanha24520782@example.com">nhutkhanha24520782@example.com</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 20
+            <p>© 2025 Mạng Máy Tính. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
