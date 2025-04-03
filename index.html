@@ -3,20 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>Mạng Máy Tính - Kiến Thức Cơ Bản</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Xin chào! Đây là website của tôi trên GitHub Pages</h1>
-    <p>Chào mừng bạn đến với trang web của tôi!</p>
-</body>
-</html>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-network-wired"></i>
+                <h1>Mạng Máy Tính</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#protocols">Giao Thức</a></li>
+                    <li><a href="#devices">Thiết Bị</a></li>
+                    <li><a href="#security">Bảo Mật</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Khám Phá Thế Giới Mạng Máy Tính</h1>
+            <p>Hiểu biết về mạng máy tính, giao thức, thiết bị và cách bảo mật mạng hiệu quả.</p>
+            <a href="#protocols" class="btn">Tìm Hiểu Ngay</a>
+        </div>
+    </section>
+
+    <!-- Protocols Section -->
+    <section id="protocols" class="section">
+        <div class="container">
+            <h2>Các Giao Thức Mạng</h2>
+            <div class="content">
+                <div class="card">
+                    <h3>TCP/IP</h3>
+                    <p>TCP/IP là bộ giao thức nền tảng cho Internet, đảm bảo truyền dữ liệu đáng tin cậy.</p>
+                </div>
+                <div class="card">
+                    <h3>HTTP/HTTPS</h3>
+                    <p>HTTP và HTTPS được dùng để truyền tải các trang web, với HTTPS có thêm bảo mật SSL/TLS.</p>
+                </div>
+                <div class="card">
+                    <h3>DNS</h3>
+                    <p>DNS chuyển đổi tên miền (như google.com) thành địa chỉ IP để kết nối.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devices Section -->
+    <section id="devices" class="section">
+        <div class="container">
+            <h2>Thiết Bị Mạng</h2>
+            <div class="content">
+                <div class="card">
+                    <h3>Router</h3>
+                    <p>Router kết nối các mạng khác nhau, định tuyến dữ liệu giữa các thiết bị.</p>
+                </div>
+                <div class="card">
+                    <h3>Switch</h3>
+                    <p>Switch kết nối các thiết bị trong cùng một mạng, chuyển dữ liệu đến đúng đích.</p>
+                </div>
+                <div class="card">
+                    <h3>Firewall</h3>
+                    <p>Firewall bảo vệ mạng bằng cách kiểm soát lưu lượng truy cập dựa trên quy tắc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="section">
+        <div class="container">
+            <h2>Bảo Mật Mạng</h2>
+            <div class="content">
+                <p>Dưới đây là một số mẹo để bảo mật mạng của bạn:</p>
+                <ul>
+                    <li>Sử dụng mật khẩu mạnh và thay đổi định kỳ.</li>
+                    <li>Kích hoạt mã hóa WPA3 cho Wi-Fi.</li>
+                    <li>Cài đặt và cập nhật phần mềm diệt virus.</li>
+                    <li>Sử dụng VPN khi truy cập mạng công cộng.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên Hệ</h2>
+            <p>Có thắc mắc? Hãy liên hệ với chúng tôi!</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Tin nhắn" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 20
